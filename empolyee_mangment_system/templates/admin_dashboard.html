@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin-dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+</head>
+<body>
+
+    {% include "admin-nav.html" %}
+
+    <section>
+        <div class="container">
+            <div class="main-container">
+                <h1 style="margin-left: 30px; margin-top: 20px;" class="div">Welcome To Admin Dashboard</h1>
+            </div>
+            <div class="main-container1">
+                <img class="img" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="profile">
+                <div class="profile-container">
+                    <h3 class="h3">Empolyee Management</h3>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem temporibus dicta repellendus qui repudiandae ea iusto omnis, numquam culpa nam distinctio possimus porro. Cumque, porro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "footer.html" %}
+
+</body>
+</html>

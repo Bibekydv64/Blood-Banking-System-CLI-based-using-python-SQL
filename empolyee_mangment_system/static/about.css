@@ -1,0 +1,118 @@
+/* --- Your Base Structure Constraints --- */
+.container {
+    height: 550px;
+    width: 100%;
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 17fr 9fr;
+}
+
+/* --- Left Main Panel Style Fixes --- */
+.main-container {
+    background-color: rgb(245, 244, 242);
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Ensures text scrolls nicely if it grows */
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.about-heading {
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Decorative subtle underline bar under heading */
+.about-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(83, 159, 226);
+}
+
+.about-text {
+    font-family: Arial, sans-serif;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Feature grid structure inside the content region */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid rgb(83, 159, 226);
+}
+
+.highlight-card h4 {
+    color: #333;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.highlight-card p {
+    color: #666;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+/* --- Right Sidebar Panel (Matching layout image natively) --- */
+.main-container1 {
+    margin-top: -2px;
+    background-color: rgb(83, 159, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Make your profile image sit perfectly inside a circle container */
+.main-container1 .img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffffff;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.profile-container .h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.profile-container .p {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 260px;
+    margin: 0 auto;
+    opacity: 0.95;
+    text-align: justify;
+}

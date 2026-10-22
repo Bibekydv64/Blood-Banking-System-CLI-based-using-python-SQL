@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='footer.css') }}">
+</head>
+<body>
+     {% include "navbar.html" %}
+
+<main>
+    <section>
+        <div class="container">
+            <!-- Left Main Area: Populated with About details -->
+            <div class="main-container">
+                <div class="about-content">
+                    <h2 class="about-heading">About Our Platform</h2>
+                    <p class="about-text">
+                        The HR ERP System delivers an all-in-one suite designed to optimize asset alignment, automate workforce workflows, and provide management with direct operational visibility.
+                    </p>
+                    
+                    <div class="highlights-grid">
+                        <div class="highlight-card">
+                            <h4>Central Records</h4>
+                            <p>Maintain accurate profile histories, employment data, and authorization metrics securely.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h4>Access Controls</h4>
+                            <p>Role-based operational dashboards separating high-level administrative tasks from user utilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Sidebar Area: Kept exactly as your template markup -->
+            <div class="main-container1">
+                <img class="img" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="profile">
+                <div class="profile-container">
+                    <h3 class="h3">Employee Management</h3>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem temporibus dicta repellendus qui repudiandae ea iusto omnis, numquam culpa nam distinctio possimus porro. Cumque, porro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    {% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+header{
+    height: 22vh;
+    background-color: aliceblue;
+}
+.header_parent{
+    background-color: rgb(74, 146, 191);
+    height: 90px;
+    width: 100%;
+}
+
+.headerh1{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+
+}
+.headerp{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: auto;
+    background-color: rgb(59, 119, 156);
+}
+.nav{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+.nav:hover{
+    color: rgb(162, 239, 214);
+}

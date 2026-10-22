@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show empolyee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='show-empolyee.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin-nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+</head>
+<body>
+    {% include "admin-nav.html" %}
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="main-container"></div>
+                <div class="main-container1">
+                    <img class="img" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="profile">
+                    <div class="profile-container">
+                        <h3 class="h3">Empolyee Management</h3>
+                        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem temporibus dicta repellendus qui repudiandae ea iusto omnis, numquam culpa nam distinctio possimus porro. Cumque, porro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include "footer.html" %}
+</body>
+</html>
